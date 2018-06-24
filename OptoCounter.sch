@@ -1,0 +1,1387 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OptoCounter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GNDD #PWR3
+U 1 1 5ACE5286
+P 1300 2450
+F 0 "#PWR3" H 1300 2200 50  0001 C CNN
+F 1 "GNDD" H 1300 2325 50  0001 C CNN
+F 2 "" H 1300 2450 50  0001 C CNN
+F 3 "" H 1300 2450 50  0001 C CNN
+	1    1300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5ACE600F
+P 2300 1850
+F 0 "R3" V 2200 1850 50  0000 C CNN
+F 1 "10k" V 2300 1850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2230 1850 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 2300 1850 50  0001 C CNN
+	1    2300 1850
+	0    1    1    0   
+$EndComp
+Text Notes 600  1900 0    60   ~ 0
+Фото датчик
+$Comp
+L R R2
+U 1 1 5ACE769E
+P 1950 1450
+F 0 "R2" H 2050 1450 50  0000 C CNN
+F 1 "1k" V 1950 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1880 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 1950 1450 50  0001 C CNN
+	1    1950 1450
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 5ACE7707
+P 1950 1250
+F 0 "#PWR7" H 1950 1100 50  0001 C CNN
+F 1 "+5V" H 1950 1390 50  0000 C CNN
+F 2 "" H 1950 1250 50  0001 C CNN
+F 3 "" H 1950 1250 50  0001 C CNN
+	1    1950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR10
+U 1 1 5ACE7405
+P 2650 2450
+F 0 "#PWR10" H 2650 2200 50  0001 C CNN
+F 1 "GNDD" H 2650 2325 50  0001 C CNN
+F 2 "" H 2650 2450 50  0001 C CNN
+F 3 "" H 2650 2450 50  0001 C CNN
+	1    2650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_ALT D2
+U 1 1 5ACE72F1
+P 2650 2150
+F 0 "D2" V 2650 2250 50  0000 C CNN
+F 1 "1N4007" H 2650 2050 50  0000 C CNN
+F 2 "MyFootprints:1N4007" H 2650 2150 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n4007" H 2650 2150 50  0001 C CNN
+	1    2650 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L D_ALT D1
+U 1 1 5ACE6EAE
+P 2650 1500
+F 0 "D1" V 2650 1600 50  0000 C CNN
+F 1 "1N4007" H 2650 1400 50  0000 C CNN
+F 2 "MyFootprints:1N4007" H 2650 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n4007" H 2650 1500 50  0001 C CNN
+	1    2650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR9
+U 1 1 5ACE7216
+P 2650 1250
+F 0 "#PWR9" H 2650 1100 50  0001 C CNN
+F 1 "+5V" H 2650 1390 50  0000 C CNN
+F 2 "" H 2650 1250 50  0001 C CNN
+F 3 "" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U1
+U 2 1 5ACE831B
+P 5600 1850
+F 0 "U1" H 5600 2050 50  0000 L CNN
+F 1 "LM358N" H 5600 1650 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5600 1850 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/lm358n-stm" H 5600 1850 50  0001 C CNN
+	2    5600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR17
+U 1 1 5ACE638B
+P 3900 2450
+F 0 "#PWR17" H 3900 2200 50  0001 C CNN
+F 1 "GNDD" H 3900 2325 50  0001 C CNN
+F 2 "" H 3900 2450 50  0001 C CNN
+F 3 "" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR16
+U 1 1 5ACE6623
+P 3900 1250
+F 0 "#PWR16" H 3900 1100 50  0001 C CNN
+F 1 "+5V" H 3900 1390 50  0000 C CNN
+F 2 "" H 3900 1250 50  0001 C CNN
+F 3 "" H 3900 1250 50  0001 C CNN
+	1    3900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR22
+U 1 1 5ACE8426
+P 5500 1250
+F 0 "#PWR22" H 5500 1100 50  0001 C CNN
+F 1 "+5V" H 5500 1390 50  0000 C CNN
+F 2 "" H 5500 1250 50  0001 C CNN
+F 3 "" H 5500 1250 50  0001 C CNN
+	1    5500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR23
+U 1 1 5ACE83E1
+P 5500 2450
+F 0 "#PWR23" H 5500 2200 50  0001 C CNN
+F 1 "GNDD" H 5500 2325 50  0001 C CNN
+F 2 "" H 5500 2450 50  0001 C CNN
+F 3 "" H 5500 2450 50  0001 C CNN
+	1    5500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U1
+U 1 1 5ACE629E
+P 4000 1750
+F 0 "U1" H 4000 1950 50  0000 L CNN
+F 1 "LM358N" H 4000 1550 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 4000 1750 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/lm358n-stm" H 4000 1750 50  0001 C CNN
+	1    4000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5ACED606
+P 3350 2150
+F 0 "R5" H 3450 2150 50  0000 C CNN
+F 1 "10k" V 3350 2150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 2150 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 3350 2150 50  0001 C CNN
+	1    3350 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L GNDD #PWR13
+U 1 1 5ACED6AC
+P 3350 2450
+F 0 "#PWR13" H 3350 2200 50  0001 C CNN
+F 1 "GNDD" H 3350 2325 50  0001 C CNN
+F 2 "" H 3350 2450 50  0001 C CNN
+F 3 "" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5ACEF15B
+P 4750 1750
+F 0 "R7" V 4650 1750 50  0000 C CNN
+F 1 "10k" V 4750 1750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 1750 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5ACFA5B6
+P 3350 1450
+F 0 "R4" H 3450 1450 50  0000 C CNN
+F 1 "22k" V 3350 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/40844" H 3350 1450 50  0001 C CNN
+	1    3350 1450
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR12
+U 1 1 5ACFA5FA
+P 3350 1250
+F 0 "#PWR12" H 3350 1100 50  0001 C CNN
+F 1 "+5V" H 3350 1390 50  0000 C CNN
+F 2 "" H 3350 1250 50  0001 C CNN
+F 3 "" H 3350 1250 50  0001 C CNN
+	1    3350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5ACFABC6
+P 3000 1850
+F 0 "C1" V 2950 1900 50  0000 L CNN
+F 1 "4.7-10uF" V 3150 1700 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3038 1700 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313115" H 3000 1850 50  0001 C CNN
+	1    3000 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5ACFB14C
+P 4250 1400
+F 0 "R6" V 4150 1400 50  0000 C CNN
+F 1 "1M" V 4250 1400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4180 1400 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/51741" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5ACFB471
+P 4250 1150
+F 0 "C2" V 4200 1200 50  0000 L CNN
+F 1 "0.1uF" V 4100 1050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4288 1000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313101" H 4250 1150 50  0001 C CNN
+	1    4250 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5ACFBB45
+P 5750 1450
+F 0 "R10" V 5650 1450 50  0000 C CNN
+F 1 "100k" V 5750 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5680 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9549" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 5ACFBCAB
+P 5000 1500
+F 0 "R8" H 5100 1500 50  0000 C CNN
+F 1 "22k" V 5000 1500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4930 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/40844" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 5ACFBD04
+P 5000 2200
+F 0 "R9" H 5100 2200 50  0000 C CNN
+F 1 "10k" V 5000 2200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4930 2200 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 5000 2200 50  0001 C CNN
+	1    5000 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR20
+U 1 1 5ACFBD5E
+P 5000 1250
+F 0 "#PWR20" H 5000 1100 50  0001 C CNN
+F 1 "+5V" H 5000 1390 50  0000 C CNN
+F 2 "" H 5000 1250 50  0001 C CNN
+F 3 "" H 5000 1250 50  0001 C CNN
+	1    5000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR21
+U 1 1 5ACFC08D
+P 5000 2450
+F 0 "#PWR21" H 5000 2200 50  0001 C CNN
+F 1 "GNDD" H 5000 2325 50  0001 C CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 4600 2800 0    60   ~ 0
+R7=1k если сигнал с датчика очень слабый
+Text Notes 4650 850  0    60   ~ 0
+Компаратор с гистерезисом
+Text Notes 3150 850  0    60   ~ 0
+Дифференциатор + фильтр
+Text GLabel 6650 1850 2    60   Input ~ 0
+COUNT
+$Comp
+L R R12
+U 1 1 5ACFE7F7
+P 6500 1500
+F 0 "R12" H 6650 1500 50  0000 C CNN
+F 1 "10k" V 6500 1500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 6500 1500 50  0001 C CNN
+	1    6500 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L R R11
+U 1 1 5ACFE90B
+P 6250 1850
+F 0 "R11" V 6150 1850 50  0000 C CNN
+F 1 "1k" V 6250 1850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6180 1850 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 6250 1850 50  0001 C CNN
+	1    6250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR25
+U 1 1 5ACFEAE2
+P 6500 1250
+F 0 "#PWR25" H 6500 1100 50  0001 C CNN
+F 1 "+5V" H 6500 1390 50  0000 C CNN
+F 2 "" H 6500 1250 50  0001 C CNN
+F 3 "" H 6500 1250 50  0001 C CNN
+	1    6500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_Coaxial_x2 J1
+U 1 1 5ACFF27F
+P 1300 1750
+F 0 "J1" H 1300 1975 50  0000 C CNN
+F 1 "RS-212" V 1415 1750 50  0001 C CNN
+F 2 "MyFootprints:RS212" H 1300 1650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/rs-212" H 1300 1650 50  0001 C CNN
+	1    1300 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ACFF74C
+P 1600 1450
+F 0 "R1" H 1700 1450 50  0000 C CNN
+F 1 "470" V 1600 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1530 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR4
+U 1 1 5ACFF816
+P 1600 1250
+F 0 "#PWR4" H 1600 1100 50  0001 C CNN
+F 1 "+5V" H 1600 1390 50  0000 C CNN
+F 2 "" H 1600 1250 50  0001 C CNN
+F 3 "" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	1    0    0    -1  
+$EndComp
+Text Notes 700  1700 0    60   ~ 0
+Светодиод
+Text GLabel 7250 3800 0    60   Input ~ 0
+SEG_A
+Text GLabel 7250 3900 0    60   Input ~ 0
+SEG_B
+Text GLabel 7250 4000 0    60   Input ~ 0
+SEG_C
+Text GLabel 7250 4100 0    60   Input ~ 0
+SEG_D
+Text GLabel 7250 4200 0    60   Input ~ 0
+SEG_E
+Text GLabel 4850 5350 2    60   Input ~ 0
+SEG_A
+Text GLabel 4850 5450 2    60   Input ~ 0
+SEG_B
+Text GLabel 4850 5550 2    60   Input ~ 0
+SEG_C
+Text GLabel 4850 5650 2    60   Input ~ 0
+SEG_D
+Text GLabel 4850 4950 2    60   Input ~ 0
+MOSI
+Text GLabel 4850 5050 2    60   Input ~ 0
+MISO
+Text GLabel 4850 5150 2    60   Input ~ 0
+SCK
+Text GLabel 4850 4650 2    60   Input ~ 0
+DIG_1
+Text GLabel 4850 4750 2    60   Input ~ 0
+DIG_2
+Text GLabel 4850 4850 2    60   Input ~ 0
+DIG_3
+$Comp
+L R R15
+U 1 1 5AD69DF2
+P 7550 3800
+F 0 "R15" V 7600 4000 50  0000 C CNN
+F 1 "470" V 7550 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 3800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 3800 50  0001 C CNN
+	1    7550 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R16
+U 1 1 5AD6B688
+P 7550 3900
+F 0 "R16" V 7600 4100 50  0000 C CNN
+F 1 "470" V 7550 3900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 3900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 3900 50  0001 C CNN
+	1    7550 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R17
+U 1 1 5AD6B6EE
+P 7550 4000
+F 0 "R17" V 7600 4200 50  0000 C CNN
+F 1 "470" V 7550 4000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R18
+U 1 1 5AD6B76A
+P 7550 4100
+F 0 "R18" V 7600 4300 50  0000 C CNN
+F 1 "470" V 7550 4100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4100 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R19
+U 1 1 5AD6B7EE
+P 7550 4200
+F 0 "R19" V 7600 4400 50  0000 C CNN
+F 1 "470" V 7550 4200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4200 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4200 50  0001 C CNN
+	1    7550 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R20
+U 1 1 5AD6B876
+P 7550 4300
+F 0 "R20" V 7600 4500 50  0000 C CNN
+F 1 "470" V 7550 4300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4300 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4300 50  0001 C CNN
+	1    7550 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R21
+U 1 1 5AD6B8F6
+P 7550 4400
+F 0 "R21" V 7600 4600 50  0000 C CNN
+F 1 "470" V 7550 4400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4400 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4400 50  0001 C CNN
+	1    7550 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R22
+U 1 1 5AD6B98A
+P 7550 4500
+F 0 "R22" V 7600 4700 50  0000 C CNN
+F 1 "470" V 7550 4500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7480 4500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/22560" H 7550 4500 50  0001 C CNN
+	1    7550 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BC56-12SRWA U3
+U 1 1 5AD65978
+P 8700 4100
+F 0 "U3" H 7900 4550 50  0000 C CNN
+F 1 "BC56-12SRWA" H 9200 4550 50  0000 C CNN
+F 2 "MyFootprints:BC56-12SRWA" H 8850 3500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/bc56-12srwa" H 8470 4130 50  0001 C CNN
+	1    8700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q1
+U 1 1 5AD65C1A
+P 9600 4900
+F 0 "Q1" H 9800 4950 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 9800 4850 50  0001 L CNN
+F 2 "MyFootprints:Q_BCE" H 9800 5000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/bs170-onsemi" H 9600 4900 50  0001 C CNN
+	1    9600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q2
+U 1 1 5AD6624D
+P 9950 5150
+F 0 "Q2" H 10150 5200 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 10150 5100 50  0001 L CNN
+F 2 "MyFootprints:Q_BCE" H 10150 5250 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/bs170-onsemi" H 9950 5150 50  0001 C CNN
+	1    9950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q3
+U 1 1 5AD662D8
+P 10300 5450
+F 0 "Q3" H 10500 5500 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 10500 5400 50  0001 L CNN
+F 2 "MyFootprints:Q_BCE" H 10500 5550 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/bs170-onsemi" H 10300 5450 50  0001 C CNN
+	1    10300 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 8900 4900 0    60   Input ~ 0
+DIG_1
+Text GLabel 9250 5150 0    60   Input ~ 0
+DIG_2
+Text GLabel 9600 5450 0    60   Input ~ 0
+DIG_3
+$Comp
+L GNDD #PWR28
+U 1 1 5AD66AD4
+P 9700 5250
+F 0 "#PWR28" H 9700 5000 50  0001 C CNN
+F 1 "GNDD" H 9700 5125 50  0001 C CNN
+F 2 "" H 9700 5250 50  0001 C CNN
+F 3 "" H 9700 5250 50  0001 C CNN
+	1    9700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR30
+U 1 1 5AD66BE8
+P 10050 5550
+F 0 "#PWR30" H 10050 5300 50  0001 C CNN
+F 1 "GNDD" H 10050 5425 50  0001 C CNN
+F 2 "" H 10050 5550 50  0001 C CNN
+F 3 "" H 10050 5550 50  0001 C CNN
+	1    10050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR32
+U 1 1 5AD66CD1
+P 10400 5800
+F 0 "#PWR32" H 10400 5550 50  0001 C CNN
+F 1 "GNDD" H 10400 5675 50  0001 C CNN
+F 2 "" H 10400 5800 50  0001 C CNN
+F 3 "" H 10400 5800 50  0001 C CNN
+	1    10400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B J3
+U 1 1 5AD6841F
+P 8350 1700
+F 0 "J3" H 8150 2150 50  0000 L CNN
+F 1 "USBB-1J" H 8150 2050 50  0000 L CNN
+F 2 "MyFootprints:USB_B" H 8500 1650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/usbb-1j" H 8500 1650 50  0001 C CNN
+	1    8350 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 1200 2    60   Input ~ 0
+POWER_SENSE
+$Comp
+L GNDD #PWR26
+U 1 1 5AD69692
+P 8300 2200
+F 0 "#PWR26" H 8300 1950 50  0001 C CNN
+F 1 "GNDD" H 8300 2075 50  0001 C CNN
+F 2 "" H 8300 2200 50  0001 C CNN
+F 3 "" H 8300 2200 50  0001 C CNN
+	1    8300 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8650 1800
+NoConn ~ 8650 1700
+$Comp
+L CP C7
+U 1 1 5AD69B93
+P 10050 1850
+F 0 "C7" H 10075 1950 50  0000 L CNN
+F 1 "330uF" H 10075 1750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 10088 1700 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000365291" H 10050 1850 50  0001 C CNN
+	1    10050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR29
+U 1 1 5AD69C2A
+P 10050 2200
+F 0 "#PWR29" H 10050 1950 50  0001 C CNN
+F 1 "GNDD" H 10050 2075 50  0001 C CNN
+F 2 "" H 10050 2200 50  0001 C CNN
+F 3 "" H 10050 2200 50  0001 C CNN
+	1    10050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_ALT D3
+U 1 1 5AD6A0E4
+P 9600 1500
+F 0 "D3" H 9600 1600 50  0000 C CNN
+F 1 "1N4007" H 9600 1400 50  0000 C CNN
+F 2 "MyFootprints:1N4007" H 9600 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n4007" H 9600 1500 50  0001 C CNN
+	1    9600 1500
+	-1   0    0    1   
+$EndComp
+Text GLabel 4850 6250 2    60   Input ~ 0
+POWER_SENSE
+$Comp
+L GNDD #PWR27
+U 1 1 5AD6BF53
+P 9300 2200
+F 0 "#PWR27" H 9300 1950 50  0001 C CNN
+F 1 "GNDD" H 9300 2075 50  0001 C CNN
+F 2 "" H 9300 2200 50  0001 C CNN
+F 3 "" H 9300 2200 50  0001 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR31
+U 1 1 5AD6CA70
+P 10200 1500
+F 0 "#PWR31" H 10200 1350 50  0001 C CNN
+F 1 "+5V" V 10200 1700 50  0000 C CNN
+F 2 "" H 10200 1500 50  0001 C CNN
+F 3 "" H 10200 1500 50  0001 C CNN
+	1    10200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R26
+U 1 1 5AD6E8D9
+P 9450 1200
+F 0 "R26" V 9350 1200 50  0000 C CNN
+F 1 "1k" V 9450 1200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9380 1200 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 9450 1200 50  0001 C CNN
+	1    9450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR8
+U 1 1 5AD6FFB0
+P 2300 4550
+F 0 "#PWR8" H 2300 4400 50  0001 C CNN
+F 1 "+5V" H 2300 4690 50  0000 C CNN
+F 2 "" H 2300 4550 50  0001 C CNN
+F 3 "" H 2300 4550 50  0001 C CNN
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5AD70334
+P 2100 4950
+F 0 "C4" V 2150 5000 50  0000 L CNN
+F 1 "0.1uF" V 1950 4850 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2138 4800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313101" H 2100 4950 50  0001 C CNN
+	1    2100 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR5
+U 1 1 5AD70512
+P 1850 5100
+F 0 "#PWR5" H 1850 4850 50  0001 C CNN
+F 1 "GNDD" H 1850 4975 50  0001 C CNN
+F 2 "" H 1850 5100 50  0001 C CNN
+F 3 "" H 1850 5100 50  0001 C CNN
+	1    1850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR15
+U 1 1 5AD70806
+P 3700 7350
+F 0 "#PWR15" H 3700 7100 50  0001 C CNN
+F 1 "GNDD" H 3700 7225 50  0001 C CNN
+F 2 "" H 3700 7350 50  0001 C CNN
+F 3 "" H 3700 7350 50  0001 C CNN
+	1    3700 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5AD70D25
+P 1100 5000
+F 0 "C3" H 1125 5100 50  0000 L CNN
+F 1 "0.1uF" H 1125 4900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1138 4850 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313101" H 1100 5000 50  0001 C CNN
+	1    1100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 5AD7164C
+P 1100 4750
+F 0 "#PWR1" H 1100 4600 50  0001 C CNN
+F 1 "+5V" H 1100 4890 50  0000 C CNN
+F 2 "" H 1100 4750 50  0001 C CNN
+F 3 "" H 1100 4750 50  0001 C CNN
+	1    1100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR2
+U 1 1 5AD71825
+P 1100 5250
+F 0 "#PWR2" H 1100 5000 50  0001 C CNN
+F 1 "GNDD" H 1100 5125 50  0001 C CNN
+F 2 "" H 1100 5250 50  0001 C CNN
+F 3 "" H 1100 5250 50  0001 C CNN
+	1    1100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_SPDT SW1
+U 1 1 5AD725FE
+P 5900 6350
+F 0 "SW1" H 5900 6520 50  0000 C CNN
+F 1 "MSW-11" H 5900 6150 50  0001 C CNN
+F 2 "MyFootprints:SM5-00N-115" H 5900 6350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm5-00n-115-msw-11" H 5900 6350 50  0001 C CNN
+	1    5900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 5AD73010
+P 9150 4900
+F 0 "R24" V 9050 4900 50  0000 C CNN
+F 1 "1k" V 9150 4900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9080 4900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 9150 4900 50  0001 C CNN
+	1    9150 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R27
+U 1 1 5AD735B7
+P 9500 5150
+F 0 "R27" V 9400 5150 50  0000 C CNN
+F 1 "1k" V 9500 5150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9430 5150 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 9500 5150 50  0001 C CNN
+	1    9500 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5AD73699
+P 9850 5450
+F 0 "R28" V 9750 5450 50  0000 C CNN
+F 1 "1k" V 9850 5450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 5450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 9850 5450 50  0001 C CNN
+	1    9850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 5AD74067
+P 5400 6350
+F 0 "R14" V 5500 6350 50  0000 C CNN
+F 1 "1k" V 5400 6350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5330 6350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/44435" H 5400 6350 50  0001 C CNN
+	1    5400 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR24
+U 1 1 5AD747FB
+P 6250 6550
+F 0 "#PWR24" H 6250 6300 50  0001 C CNN
+F 1 "GNDD" H 6250 6425 50  0001 C CNN
+F 2 "" H 6250 6550 50  0001 C CNN
+F 3 "" H 6250 6550 50  0001 C CNN
+	1    6250 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 6250
+$Comp
+L R R13
+U 1 1 5AD7B70E
+P 2550 4650
+F 0 "R13" V 2450 4650 50  0000 C CNN
+F 1 "10k" V 2550 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2480 4650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 2550 4650 50  0001 C CNN
+	1    2550 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L ATMEGA8A-PU U2
+U 1 1 5AD811D2
+P 3700 5750
+F 0 "U2" H 2950 7050 50  0000 L BNN
+F 1 "ATMEGA8A-PU" H 4200 4300 50  0000 L BNN
+F 2 "MyFootprints:TRS-28_Connfly" H 3700 5750 50  0001 C CIN
+F 3 "https://www.chipdip.ru/product/atmega8a-pu" H 3700 5750 50  0001 C CNN
+	1    3700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR14
+U 1 1 5AD88E65
+P 3700 4250
+F 0 "#PWR14" H 3700 4100 50  0001 C CNN
+F 1 "+5V" H 3700 4390 50  0000 C CNN
+F 2 "" H 3700 4250 50  0001 C CNN
+F 3 "" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Odd_Even J2
+U 1 1 5AD8EB18
+P 3600 3400
+F 0 "J2" H 3650 3600 50  0000 C CNN
+F 1 "PLD-6" H 3650 3200 50  0001 C CNN
+F 2 "MyFootprints:AVR_ISP" H 3600 3400 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/idc-06ms-bh-06" H 3600 3400 50  0001 C CNN
+	1    3600 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 3500 3650 0    60   ~ 0
+PLD-6
+Text Notes 3450 3150 0    60   ~ 0
+AVR ISP
+Text GLabel 7250 4300 0    60   Input ~ 0
+SEG_F
+Text GLabel 7250 4400 0    60   Input ~ 0
+SEG_G
+Text GLabel 7250 4500 0    60   Input ~ 0
+SEG_DP
+Text GLabel 4000 3400 2    60   Input ~ 0
+MOSI
+$Comp
+L GNDD #PWR19
+U 1 1 5AD8FBC0
+P 4000 3550
+F 0 "#PWR19" H 4000 3300 50  0001 C CNN
+F 1 "GNDD" H 4000 3425 50  0001 C CNN
+F 2 "" H 4000 3550 50  0001 C CNN
+F 3 "" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR18
+U 1 1 5AD8FCB1
+P 4000 3250
+F 0 "#PWR18" H 4000 3100 50  0001 C CNN
+F 1 "+5V" H 4000 3390 50  0000 C CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 3300 0    60   Input ~ 0
+MISO
+Text GLabel 3300 3400 0    60   Input ~ 0
+SCK
+Text GLabel 3300 3500 0    60   Input ~ 0
+RESET
+Text GLabel 2800 4300 2    60   Input ~ 0
+RESET
+$Comp
+L Crystal Y1
+U 1 1 5AD931DB
+P 2500 5450
+F 0 "Y1" V 2500 5650 50  0000 C CNN
+F 1 "8Mhz" V 2500 5200 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-4H_Vertical" H 2500 5450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/8mhz-hc-49s" H 2500 5450 50  0001 C CNN
+	1    2500 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 5AD9330F
+P 2250 5300
+F 0 "C5" V 2200 5400 50  0000 L CNN
+F 1 "22pF" V 2200 5050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2288 5150 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313106" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C6
+U 1 1 5AD933CC
+P 2250 5600
+F 0 "C6" V 2300 5700 50  0000 L CNN
+F 1 "22pF" V 2300 5350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2288 5450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000313106" H 2250 5600 50  0001 C CNN
+	1    2250 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR6
+U 1 1 5AD94B64
+P 1850 5500
+F 0 "#PWR6" H 1850 5250 50  0001 C CNN
+F 1 "GNDD" H 1850 5375 50  0001 C CNN
+F 2 "" H 1850 5500 50  0001 C CNN
+F 3 "" H 1850 5500 50  0001 C CNN
+	1    1850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR11
+U 1 1 5AD85B99
+P 2700 5100
+F 0 "#PWR11" H 2700 4850 50  0001 C CNN
+F 1 "GNDD" H 2700 4975 50  0001 C CNN
+F 2 "" H 2700 5100 50  0001 C CNN
+F 3 "" H 2700 5100 50  0001 C CNN
+	1    2700 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 6550 2    60   Input ~ 0
+COUNT
+$Comp
+L R R23
+U 1 1 5AD9805C
+P 8850 1500
+F 0 "R23" V 8750 1500 50  0000 C CNN
+F 1 "10" V 8850 1500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/48560" H 8850 1500 50  0001 C CNN
+	1    8850 1500
+	0    1    1    0   
+$EndComp
+Text GLabel 4850 5750 2    60   Input ~ 0
+SEG_E
+Text GLabel 4850 5850 2    60   Input ~ 0
+SEG_F
+Text GLabel 4850 6050 2    60   Input ~ 0
+SEG_G
+Text GLabel 4850 6150 2    60   Input ~ 0
+SEG_DP
+Wire Wire Line
+	2800 4300 2750 4300
+Connection ~ 2750 4650
+Wire Wire Line
+	2750 4300 2750 4650
+Wire Wire Line
+	3300 3500 3400 3500
+Wire Wire Line
+	3300 3400 3400 3400
+Wire Wire Line
+	3300 3300 3400 3300
+Wire Wire Line
+	4000 3400 3900 3400
+Wire Wire Line
+	4000 3500 4000 3550
+Wire Wire Line
+	3900 3500 4000 3500
+Wire Wire Line
+	4000 3300 4000 3250
+Wire Wire Line
+	3900 3300 4000 3300
+Wire Wire Line
+	3700 4250 3700 4350
+Wire Wire Line
+	3700 7250 3700 7350
+Wire Wire Line
+	1850 4950 1850 5100
+Wire Wire Line
+	1950 4950 1850 4950
+Wire Wire Line
+	2300 4550 2300 4650
+Wire Wire Line
+	2300 4650 2300 4850
+Wire Wire Line
+	2700 5050 2700 5100
+Wire Wire Line
+	2800 5050 2700 5050
+Connection ~ 2300 4650
+Wire Wire Line
+	2400 4650 2300 4650
+Wire Wire Line
+	2700 4650 2750 4650
+Wire Wire Line
+	2750 4650 2800 4650
+Wire Wire Line
+	2300 4850 2800 4850
+Wire Wire Line
+	6250 6450 6250 6550
+Wire Wire Line
+	6100 6450 6250 6450
+Wire Wire Line
+	5550 6350 5700 6350
+Wire Wire Line
+	9250 5150 9350 5150
+Wire Wire Line
+	9650 5150 9750 5150
+Wire Wire Line
+	10000 5450 10100 5450
+Wire Wire Line
+	9700 5450 9600 5450
+Wire Wire Line
+	9000 4900 8900 4900
+Wire Wire Line
+	9300 4900 9400 4900
+Wire Wire Line
+	1100 5150 1100 5250
+Wire Wire Line
+	1100 4750 1100 4850
+Wire Wire Line
+	2250 4950 2800 4950
+Wire Wire Line
+	9600 1200 9750 1200
+Wire Wire Line
+	9150 1200 9300 1200
+Connection ~ 9300 1500
+Wire Wire Line
+	9300 1500 9300 1700
+Connection ~ 10050 1500
+Wire Wire Line
+	9300 2000 9300 2200
+Connection ~ 9150 1500
+Wire Wire Line
+	9150 1200 9150 1500
+Wire Wire Line
+	9000 1500 9150 1500
+Wire Wire Line
+	9150 1500 9300 1500
+Wire Wire Line
+	9300 1500 9450 1500
+Wire Wire Line
+	10050 2000 10050 2200
+Wire Wire Line
+	10050 1500 10050 1700
+Connection ~ 8300 2150
+Wire Wire Line
+	8300 2150 8300 2200
+Wire Wire Line
+	8350 2150 8350 2100
+Wire Wire Line
+	8250 2150 8300 2150
+Wire Wire Line
+	8300 2150 8350 2150
+Wire Wire Line
+	8250 2100 8250 2150
+Wire Wire Line
+	10400 5650 10400 5800
+Wire Wire Line
+	10050 5350 10050 5550
+Wire Wire Line
+	9700 5100 9700 5250
+Wire Wire Line
+	10400 4500 10400 5250
+Wire Wire Line
+	10050 4400 10050 4950
+Wire Wire Line
+	9700 4300 9700 4700
+Wire Wire Line
+	7400 4500 7250 4500
+Wire Wire Line
+	7250 4400 7400 4400
+Wire Wire Line
+	7400 4300 7250 4300
+Wire Wire Line
+	7250 4200 7400 4200
+Wire Wire Line
+	7400 4100 7250 4100
+Wire Wire Line
+	7250 4000 7400 4000
+Wire Wire Line
+	7400 3900 7250 3900
+Wire Wire Line
+	7750 3900 7700 3900
+Wire Wire Line
+	7700 4000 7750 4000
+Wire Wire Line
+	7750 4100 7700 4100
+Wire Wire Line
+	7700 4200 7750 4200
+Wire Wire Line
+	7750 4300 7700 4300
+Wire Wire Line
+	7700 4400 7750 4400
+Wire Wire Line
+	7750 4500 7700 4500
+Wire Wire Line
+	7400 3800 7250 3800
+Wire Wire Line
+	7750 3800 7700 3800
+Wire Wire Line
+	9700 4300 9600 4300
+Wire Wire Line
+	9600 4500 10400 4500
+Wire Wire Line
+	9600 4400 10050 4400
+Wire Wire Line
+	1600 1250 1600 1300
+Wire Wire Line
+	1600 1650 1450 1650
+Wire Wire Line
+	1600 1600 1600 1650
+Wire Wire Line
+	6500 1250 6500 1350
+Connection ~ 6500 1850
+Wire Wire Line
+	6500 1850 6500 1650
+Wire Wire Line
+	6400 1850 6500 1850
+Wire Wire Line
+	6500 1850 6650 1850
+Connection ~ 6000 1850
+Wire Notes Line
+	4550 700  4550 2800
+Wire Wire Line
+	5000 2450 5000 2350
+Connection ~ 5000 1950
+Wire Wire Line
+	5300 1950 5000 1950
+Wire Wire Line
+	5000 1650 5000 1950
+Wire Wire Line
+	5000 1950 5000 2050
+Wire Wire Line
+	5000 1250 5000 1350
+Connection ~ 5200 1750
+Wire Wire Line
+	5200 1450 5200 1750
+Wire Wire Line
+	5600 1450 5200 1450
+Wire Wire Line
+	5900 1850 6000 1850
+Wire Wire Line
+	6000 1850 6100 1850
+Wire Wire Line
+	6000 1450 6000 1850
+Wire Wire Line
+	5900 1450 6000 1450
+Wire Wire Line
+	4900 1750 5200 1750
+Wire Wire Line
+	5200 1750 5300 1750
+Connection ~ 4050 1400
+Wire Wire Line
+	4050 1150 4050 1400
+Wire Wire Line
+	4100 1150 4050 1150
+Connection ~ 4450 1400
+Wire Wire Line
+	4400 1150 4450 1150
+Connection ~ 3600 1850
+Wire Wire Line
+	3600 1400 3600 1850
+Wire Wire Line
+	3600 1400 4050 1400
+Wire Wire Line
+	4050 1400 4100 1400
+Connection ~ 4450 1750
+Wire Wire Line
+	4450 1150 4450 1400
+Wire Wire Line
+	4450 1400 4450 1750
+Wire Wire Line
+	4400 1400 4450 1400
+Wire Wire Line
+	3150 1850 3600 1850
+Wire Wire Line
+	3600 1850 3700 1850
+Wire Wire Line
+	2450 1850 2650 1850
+Wire Wire Line
+	2650 1850 2850 1850
+Wire Wire Line
+	3900 2050 3900 2450
+Wire Wire Line
+	3350 1650 3700 1650
+Wire Wire Line
+	3350 1250 3350 1300
+Wire Wire Line
+	3900 1450 3900 1250
+Wire Wire Line
+	3350 2300 3350 2450
+Connection ~ 3350 1650
+Wire Wire Line
+	3350 1600 3350 1650
+Wire Wire Line
+	3350 1650 3350 2000
+Wire Wire Line
+	4300 1750 4450 1750
+Wire Wire Line
+	4450 1750 4600 1750
+Wire Wire Line
+	5500 1250 5500 1550
+Wire Wire Line
+	5500 2150 5500 2450
+Wire Wire Line
+	1450 1850 1950 1850
+Wire Wire Line
+	1950 1850 2150 1850
+Wire Wire Line
+	2650 1350 2650 1250
+Wire Wire Line
+	2650 2300 2650 2450
+Wire Wire Line
+	1950 1250 1950 1300
+Wire Wire Line
+	1950 1600 1950 1850
+Connection ~ 1950 1850
+Wire Wire Line
+	2650 1650 2650 1850
+Wire Wire Line
+	2650 1850 2650 2000
+Connection ~ 2650 1850
+Wire Wire Line
+	1300 2050 1300 2450
+Wire Wire Line
+	2400 5300 2500 5300
+Wire Wire Line
+	2500 5300 2650 5300
+Wire Wire Line
+	2650 5300 2650 5350
+Wire Wire Line
+	2650 5350 2800 5350
+Wire Wire Line
+	2400 5600 2500 5600
+Wire Wire Line
+	2500 5600 2650 5600
+Wire Wire Line
+	2650 5600 2650 5550
+Wire Wire Line
+	2650 5550 2800 5550
+Wire Wire Line
+	2100 5300 2000 5300
+Wire Wire Line
+	2000 5300 2000 5450
+Wire Wire Line
+	2000 5450 2000 5600
+Wire Wire Line
+	2000 5600 2100 5600
+Wire Wire Line
+	2000 5450 1850 5450
+Connection ~ 2000 5450
+Connection ~ 2500 5300
+Connection ~ 2500 5600
+Wire Wire Line
+	1850 5450 1850 5500
+Wire Wire Line
+	8650 1500 8700 1500
+Wire Wire Line
+	9750 1500 10050 1500
+Wire Wire Line
+	10050 1500 10200 1500
+Wire Wire Line
+	4850 6550 4700 6550
+Wire Wire Line
+	4850 4950 4700 4950
+Wire Wire Line
+	4850 5050 4700 5050
+Wire Wire Line
+	4850 5150 4700 5150
+Wire Wire Line
+	4850 4850 4700 4850
+Wire Wire Line
+	4700 4750 4850 4750
+Wire Wire Line
+	4850 4650 4700 4650
+Wire Wire Line
+	5250 6350 4700 6350
+Wire Wire Line
+	4850 6250 4700 6250
+Wire Wire Line
+	4850 6150 4700 6150
+Wire Wire Line
+	4850 6050 4700 6050
+Wire Wire Line
+	4850 5850 4700 5850
+Wire Wire Line
+	4850 5750 4700 5750
+Wire Wire Line
+	4850 5650 4700 5650
+Wire Wire Line
+	4850 5550 4700 5550
+Wire Wire Line
+	4850 5450 4700 5450
+Wire Wire Line
+	4850 5350 4700 5350
+NoConn ~ 4700 6450
+NoConn ~ 4700 6650
+NoConn ~ 4700 6750
+$Comp
+L D_Schottky_ALT D4
+U 1 1 5B2EC92D
+P 9300 1850
+F 0 "D4" V 9300 2000 50  0000 C CNN
+F 1 "1N4734A" V 9300 1600 50  0000 C CNN
+F 2 "" H 9300 1850 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n4734a" H 9300 1850 50  0001 C CNN
+	1    9300 1850
+	0    -1   1    0   
+$EndComp
+Text Notes 9400 2000 0    60   ~ 0
+5.6V
+Text Notes 9000 5900 0    60   ~ 0
+Q1-Q3 могут быть\nN-канальными полевыми
+$EndSCHEMATC
